@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('quadratic-form');
     const root1 = document.getElementById('root1');
     const root2 = document.getElementById('root2');
     form.addEventListener('submit', async (event) => {
@@ -15,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }else{
                 const errorEl = document.getElementById('error');
                 errorEl.textContent = 'Error: ' + res.error;
-            }
-            
+            }     
         } catch (error) {
             console.error('Error:', error);
             
